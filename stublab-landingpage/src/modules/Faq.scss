@@ -1,0 +1,101 @@
+.faq-container {
+    background: linear-gradient(135deg, #0a0f1c 0%, #1a1f2c 100%);
+    min-height: 100vh;
+}
+
+.custom-badge {
+    background: linear-gradient(135deg, #0d0f1a, #08142e);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.text-secondary {
+    color: #a0a0a0 !important;
+}
+
+.sticky-top {
+    top: 2rem;
+    z-index: 1;
+}
+
+.custom-accordion {
+    .accordion-item {
+        background: linear-gradient(135deg, #0d0f1a, #08142e);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 1rem;
+        border-radius: 15px !important;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .accordion-header {
+        padding: 0;
+        
+        .accordion-button {
+            background: transparent;
+            color: #ffffff;
+            padding: 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            box-shadow: none;
+            
+            &:not(.collapsed) {
+                background: transparent;
+                color: #ffffff;
+            }
+
+            &::after {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            }
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.05);
+            }
+        }
+    }
+
+    .accordion-body {
+        background: transparent;
+        color: #a0a0a0;
+        padding: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+@media (max-width: 991px) {
+    .sticky-top {
+        position: relative !important;
+        top: 0;
+        padding-top: 0 !important;
+    }
+    
+    .custom-accordion {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-accordion {
+        .accordion-button {
+            font-size: 1rem;
+            padding: 1.25rem;
+        }
+        
+        .accordion-body {
+            padding: 1.25rem;
+        }
+    }
+}

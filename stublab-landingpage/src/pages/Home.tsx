@@ -5,6 +5,7 @@ import LandingCard from '../modules/LandingCard'
 import Features from '../modules/Features'
 import TeamMembers from '../modules/TeamMembers'
 import { Container } from 'react-bootstrap'
+import Faq from '../modules/Faq'
 
 export const Home = () => {
   const backgroundVideo = "/videos/backgroundvideo.mp4";
@@ -25,6 +26,7 @@ export const Home = () => {
       <LandingCard />
       <Features />
       <TeamMembers />
+      <Faq/>
     </Container>
   )
 }
