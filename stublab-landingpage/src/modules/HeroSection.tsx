@@ -2,25 +2,27 @@ import React from "react";
 import { Container, Row, Col, Badge, Button } from "react-bootstrap";
 import { ReactComponent as Check } from "../assets/heroimg.svg";
 
+// const backgroundVideo = "/videos/backgroundvideo.mp4";
+
 const HeroSection: React.FC = () => {
     return (
         <Container
             fluid
-            className="text-center bg-dark py-5 d-flex align-items-center justify-content-center"
-            style={{ minHeight: "100vh" }}
+            className="position-relative text-center text-light py-5 d-flex align-items-center justify-content-center"
+            style={{ minHeight: "100vh", overflow: "hidden" }}
         >
-            <div
-                id="globe"
-                className="position-absolute end-0 top-10 mt-sm-3 mt-7 me-lg-7 peekaboo"
+            {/* <video 
+                autoPlay 
+                loop 
+                muted 
+                className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+                style={{ zIndex: "-1" }}
             >
-                <canvas
-                    width="700"
-                    height="654"
-                    className="w-lg-100 h-lg-100 w-75 h-75 me-lg-0 me-n10 mt-lg-5"
-                    style={{ width: "700px", height: "654.594px" }}
-                ></canvas>
-            </div>
-            <Row className="w-100">
+                <source src={backgroundVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video> */}
+
+            <Row className="w-100 position-relative" style={{ zIndex: "1" }}>
                 <Col md={12} className="d-flex flex-column align-items-center">
                     <Badge
                         pill

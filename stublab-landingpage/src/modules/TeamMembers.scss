@@ -1,0 +1,72 @@
+$primary-color: #007bff;
+$card-background: #333;
+$icon-color: white;
+$icon-hover-color: $primary-color;
+
+.team-card {
+  position: relative;
+  width: 18rem;
+  background-color: $card-background;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .team-image-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+
+    .team-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover .team-image {
+      transform: scale(1.1);
+    }
+
+    .social-icons {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 15px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+
+      .icon {
+        color: $icon-color;
+        font-size: 24px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $icon-hover-color;
+        }
+      }
+    }
+
+    &:hover .social-icons {
+      opacity: 1;
+    }
+  }
+
+  .team-name {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 15px;
+  }
+
+  .team-role {
+    font-size: 1rem;
+    color: #ccc;
+  }
+}
