@@ -6,6 +6,7 @@ import Features from '../modules/Features'
 import TeamMembers from '../modules/TeamMembers'
 import { Container } from 'react-bootstrap'
 import Faq from '../modules/Faq'
+import Footer from '../modules/Footer'
 
 export const Home = () => {
   const backgroundVideo = "/videos/backgroundvideo.mp4";
@@ -27,6 +28,7 @@ export const Home = () => {
       <Features />
       <TeamMembers />
       <Faq/>
+      <Footer/>
     </Container>
   )
 }
