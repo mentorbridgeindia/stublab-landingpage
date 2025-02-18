@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Badge, Button } from "react-bootstrap";
-import { ReactComponent as Check } from "../assets/heroimg.svg";
+import { FaCheckCircle, FaCogs, FaRegClock } from "react-icons/fa"; // Importing icons
 
 // const backgroundVideo = "/videos/backgroundvideo.mp4";
 
@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
     return (
         <Container
             fluid
-            className="position-relative text-center text-light py-5 d-flex align-items-center justify-content-center"
+            className="position-relative text-center text-light py-5 d-flex align-items-center justify-content-center "
             style={{ minHeight: "100vh", overflow: "hidden" }}
         >
             {/* <video 
@@ -23,10 +23,10 @@ const HeroSection: React.FC = () => {
             </video> */}
 
             <Row className="w-100 position-relative" style={{ zIndex: "1" }}>
-                <Col md={12} className="d-flex flex-column align-items-center">
+                <Col md={12} className="d-flex flex-column">
                     <Badge
                         pill
-                        bg="secondary"
+                        bg="teriary"
                         text="light"
                         className="mb-3 px-3 py-2 shadow-sm"
                     >
@@ -40,18 +40,18 @@ const HeroSection: React.FC = () => {
                         <br />
                         without waiting for backend development.
                     </p>
-                    <div className="d-flex justify-content-center gap-5 mt-3 mb-3">
-                        <div className="p-2 text-light">
-                            <Check /> AI-Powered Mock Data
+                    <div className="d-flex justify-content-center gap-4 mt-3 mb-3">
+                        <div className="d-flex flex-column gap-2 p-2 text-light ">
+                            <FaCheckCircle className="align-self-center" /> AI-Powered Mock Data
                         </div>
-                        <div className="p-2 text-light">
-                            <Check /> Customizable API Responses
+                        <div className="d-flex flex-column gap-2 p-2 text-light">
+                            <FaCogs className="align-self-center"  /> Customizable API Responses
                         </div>
-                        <div className="p-2 text-light">
-                            <Check /> Real-time API Logs
+                        <div className="d-flex flex-column gap-2  p-2 text-light">
+                            <FaRegClock className="align-self-center"  /> Real-time API Logs
                         </div>
                     </div>
-                    <div className="d-flex gap-3 mt-3">
+                    <div className="d-flex gap-3 mt-3 justify-content-center">
                         <Button variant="light" size="lg" className="px-4 py-2 shadow-sm text-dark">
                             Get Started
                         </Button>

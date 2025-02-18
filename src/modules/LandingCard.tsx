@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Col, Container, Card, Badge,Row } from 'react-bootstrap';
+import { Button, Col, Container, Card, Badge, Row } from 'react-bootstrap';
 import { MdOutlineRocketLaunch } from "react-icons/md";
 import security from "../assets/security.svg";
 
@@ -50,7 +50,9 @@ const LandingCard = () => {
                             overflowY: "auto",
                             maxHeight: "80vh",
                         }}>
-                            <Button>New</Button>
+                            <Button variant="outline-light" size="sm" className="px-4 py-2 shadow-sm">
+                                New
+                            </Button>
                             <h1>Welcome to StubLab</h1>
                             <p>API Mocking & Testing Made Easy</p>
                         </div>

@@ -4,9 +4,10 @@ import AboutSection from '../modules/AboutSection'
 import LandingCard from '../modules/LandingCard'
 import Features from '../modules/Features'
 import TeamMembers from '../modules/TeamMembers'
-import { Container } from 'react-bootstrap'
+import { Container, Nav } from 'react-bootstrap'
 import Faq from '../modules/Faq'
 import Footer from '../modules/Footer'
+import CustomNavbar from '../modules/Navbar'
 
 export const Home = () => {
   const backgroundVideo = "/videos/backgroundvideo.mp4";
@@ -22,6 +23,7 @@ export const Home = () => {
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
     </video>
+    <CustomNavbar/>
       <HeroSection />
       <AboutSection />
       <LandingCard />

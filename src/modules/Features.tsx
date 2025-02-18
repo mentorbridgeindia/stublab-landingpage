@@ -5,7 +5,7 @@ import { FaServer, FaBrain, FaCodeBranch, FaBug, FaClock, FaShieldAlt } from "re
 // const backgroundVideo = "/videos/backgroundvideo.mp4"; 
 const featuresData = [
     {
-        icon: <FaServer size={30} className="text-warning" />,
+        icon: <FaServer size={30} className="text-light" />,
         title: "Mock API Server",
         badge: "PRO",
         subtitle: "No Backend Required",
@@ -18,26 +18,26 @@ const featuresData = [
         description: "Generate dynamic mock data using AI for better testing.",
     },
     {
-        icon: <FaCodeBranch size={30} className="text-primary" />,
+        icon: <FaCodeBranch size={30} className="text-light" />,
         title: "Customizable Responses",
         subtitle: "Status Codes & Errors",
         description: "Simulate different API responses, delays, and errors with ease.",
     },
     {
-        icon: <FaBug size={30} className="text-info" />,
+        icon: <FaBug size={30} className="text-light" />,
         title: "Error Simulation",
         subtitle: "Debugging Made Easy",
         description: "Test API failures by triggering specific error responses.",
     },
     {
-        icon: <FaClock size={30} className="text-warning" />,
+        icon: <FaClock size={30} className="text-light" />,
         title: "Real-time API Logs",
         badge: "PRO",
         subtitle: "Track API Requests",
         description: "Monitor API calls and responses in real time with logging.",
     },
     {
-        icon: <FaShieldAlt size={30} className="text-success" />,
+        icon: <FaShieldAlt size={30} className="text-light" />,
         title: "Secure & Private",
         subtitle: "Access Control",
         description: "Control who can access and modify your mock APIs with security layers.",

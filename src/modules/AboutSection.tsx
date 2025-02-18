@@ -1,6 +1,6 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
-import security from "../assets/security.svg"; 
+import { Badge, Button, Col, Container, Row } from "react-bootstrap";
+import security from "../assets/security.svg";
 
 
 const AboutSection = () => {
@@ -29,11 +29,11 @@ const AboutSection = () => {
                 </Col>
 
                 <Col lg={6}>
-                    <div className="d-flex flex-column gap-3">
-                        <div className="d-flex flex-column align-items-start">
-                            <Button variant="secondary" className="text-light">
+                    <div className="d-flex flex-column gap-2">
+                        <div className="d-flex flex-column align-items-center align-items-lg-start  mt-3">
+                            <Badge bg="" style={{ borderRadius: "5px", padding: "8px 16px", background: "rgba(255, 255, 255, 0.1)", color: "#fff" }} className="text-light">
                                 About StubLab
-                            </Button>
+                            </Badge>
                         </div>
 
                         <div className="d-flex flex-column align-items-start py-2">
@@ -58,9 +58,10 @@ const AboutSection = () => {
                             <p className="mb-1 text-light">Simulate API Failures & Errors</p>
                         </div>
 
-                        {/* CTA Button */}
                         <div className="d-flex align-items-center py-3">
-                            <Button variant="light" className="text-dark">Learn More</Button>
+                            <Button variant="outline-light" size="sm" className="px-4 py-2  ">
+                                Learn More
+                            </Button>
                         </div>
                     </div>
                 </Col>
