@@ -1,17 +1,17 @@
 import React from "react";
 import { Container, Row, Col, Badge, Button } from "react-bootstrap";
-import { FaCheckCircle, FaCogs, FaRegClock } from "react-icons/fa"; 
+import { FaCheckCircle, FaCogs, FaRegClock } from "react-icons/fa";
 
 const backgroundVideo = "/videos/backgroundvideo.mp4";
 
 const HeroSection: React.FC = () => {
     return (
-        <Container fluid className="position-relative text-light p-5 m" style={{ minHeight: "100vh", overflow: "hidden" }}>
-        
-            <video 
-                autoPlay 
-                loop 
-                muted 
+        <Container fluid className="position-relative text-light p-5 mt-5  " style={{ minHeight: "100vh", overflow: "hidden" }}>
+
+            <video
+                autoPlay
+                loop
+                muted
                 className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
                 style={{ zIndex: "-1" }}
             >
@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
                         Create & Test APIs <br /> Without a Backend
                     </h1>
                     <p className="lead text-light text-center mt-3 mb-3">
-                        StubLab is your ultimate API mocking tool, enabling fast and flexible API testing  
+                        StubLab is your ultimate API mocking tool, enabling fast and flexible API testing
                         <br />
                         without waiting for backend development.
                     </p>
@@ -42,10 +42,10 @@ const HeroSection: React.FC = () => {
                             <FaCheckCircle className="align-self-center" /> AI-Powered Mock Data
                         </div>
                         <div className="d-flex flex-column gap-2 p-2 text-light">
-                            <FaCogs className="align-self-center"  /> Customizable API Responses
+                            <FaCogs className="align-self-center" /> Customizable API Responses
                         </div>
                         <div className="d-flex flex-column gap-2  p-2 text-light">
-                            <FaRegClock className="align-self-center"  /> Real-time API Logs
+                            <FaRegClock className="align-self-center" /> Real-time API Logs
                         </div>
                     </div>
                     <div className="d-flex gap-3 mt-3 justify-content-center">
@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
                     </div>
                 </Col>
             </Row>
-            </Container>
+        </Container>
     );
 };
 
