@@ -29,7 +29,6 @@ const Faq = () => {
   return (
     <Container fluid className="faq-container position-relative text-light py-5">
       <Row className="justify-content-center align-items-start g-5">
-        {/* FAQ Heading */}
         <Col lg={5} className="pe-lg-5">
           <div className="sticky-top pt-5">
             <div className="d-flex flex-column align-items-start gap-3 mb-4">
