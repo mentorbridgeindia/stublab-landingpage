@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Container, Card, Row, Col, Badge } from 'react-bootstrap';
 import { FaServer, FaBrain, FaCodeBranch, FaBug, FaClock, FaShieldAlt } from "react-icons/fa";
 
-// const backgroundVideo = "/videos/backgroundvideo.mp4"; 
+const backgroundVideo = "/videos/backgroundvideo.mp4"; 
 const featuresData = [
     {
         icon: <FaServer size={30} className="text-light" />,
@@ -47,7 +47,7 @@ const featuresData = [
 const Features = () => {
     return (
         <Container fluid className="position-relative text-light p-5 " style={{ minHeight: "100vh", overflow: "hidden" }}>
-            {/* <video 
+            <video 
                 autoPlay 
                 loop 
                 muted 
@@ -56,7 +56,7 @@ const Features = () => {
             >
                 <source src={backgroundVideo} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video> */}
+            </video>
 
             <div className="d-flex flex-column align-items-center gap-5 position-relative" style={{ zIndex: "1" }}>
                 <div className="text-center mb-4">

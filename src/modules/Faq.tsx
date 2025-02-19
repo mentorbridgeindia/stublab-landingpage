@@ -25,35 +25,49 @@ const faqData = [
   }
 ];
 
+const backgroundVideo = "/videos/backgroundvideo.mp4";
+
 const Faq = () => {
   return (
-    <Container fluid className="faq-container position-relative text-light py-5">
-      <Row className="justify-content-center align-items-start g-5">
-        <Col lg={5} className="pe-lg-5">
-          <div className="sticky-top pt-5">
-            <div className="d-flex flex-column align-items-start gap-3 mb-4">
-              <Badge className="custom-badge">FAQ</Badge>
-              <h1 className="display-4 mb-0 fw-bold">Frequently</h1>
-              <h1 className="display-4 text-secondary mb-0 fw-bold">Asked Questions</h1>
+    <div className="position-relative overflow-hidden">
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+        style={{ zIndex: "-1" }}
+      >
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <Container fluid className="faq-container position-relative text-light py-5">
+        <Row className="justify-content-center align-items-start g-5">
+          <Col lg={5} className="pe-lg-5">
+            <div className="sticky-top pt-5">
+              <div className="d-flex flex-column align-items-start gap-3 mb-4">
+                <Badge className="custom-badge">FAQ</Badge>
+                <h1 className="display-4 mb-0 fw-bold">Frequently</h1>
+                <h1 className="display-4 text-secondary mb-0 fw-bold">Asked Questions</h1>
+              </div>
+              <p className="text-secondary mb-0 pe-lg-5">
+                Have questions about StubLab? Find answers to common queries about API mocking, customization, security, and more.
+              </p>
             </div>
-            <p className="text-secondary mb-0 pe-lg-5">
-              Have questions about StubLab? Find answers to common queries about API mocking, customization, security, and more.
-            </p>
-          </div>
-        </Col>
+          </Col>
 
-        <Col lg={5} className="ps-lg-5">
-          <Accordion className="custom-accordion">
-            {faqData.map((faq, index) => (
-              <Accordion.Item key={index} eventKey={index.toString()}>
-                <Accordion.Header>{faq.question}</Accordion.Header>
-                <Accordion.Body>{faq.answer}</Accordion.Body>
-              </Accordion.Item>
-            ))}
-          </Accordion>
-        </Col>
-      </Row>
-    </Container>
+          <Col lg={5} className="ps-lg-5">
+            <Accordion className="custom-accordion">
+              {faqData.map((faq, index) => (
+                <Accordion.Item key={index} eventKey={index.toString()}>
+                  <Accordion.Header>{faq.question}</Accordion.Header>
+                  <Accordion.Body>{faq.answer}</Accordion.Body>
+                </Accordion.Item>
+              ))}
+            </Accordion>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
 

@@ -26,6 +26,7 @@ const teamMembers = [
 ];
 
 const duplicatedTeamMembers = [...teamMembers, ...teamMembers];
+const backgroundVideo = "/videos/backgroundvideo.mp4";
 
 const TeamMembers: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -35,24 +36,34 @@ const TeamMembers: React.FC = () => {
     if (!scrollContainer) return;
 
     let scrollSpeed = 1;
-    const maxScroll = scrollContainer.scrollWidth / 2; // Half to ensure looping works
+    const maxScroll = scrollContainer.scrollWidth / 2;
 
     const scrollStep = () => {
       if (!scrollContainer) return;
 
       if (scrollContainer.scrollLeft >= maxScroll) {
-        scrollContainer.scrollLeft = 0; // Reset to start
+        scrollContainer.scrollLeft = 0;
       } else {
         scrollContainer.scrollLeft += scrollSpeed;
       }
     };
 
-    const interval = setInterval(scrollStep, 20); // Adjust for smooth animation
+    const interval = setInterval(scrollStep, 20);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <Container fluid className="position-relative text-light p-5" style={{ minHeight: '100vh', overflow: 'hidden' }}>
+      <video
+        autoPlay
+        loop
+        muted
+        className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+        style={{ zIndex: "-1" }}
+      >
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="d-flex flex-column gap-5">
         <div className="d-flex flex-column gap-3 text-center">
           <h2>Meet Our Team</h2>

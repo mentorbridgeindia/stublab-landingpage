@@ -10,19 +10,9 @@ import Footer from '../modules/Footer'
 import CustomNavbar from '../modules/Navbar'
 
 export const Home = () => {
-  const backgroundVideo = "/videos/backgroundvideo.mp4";
   return (
-    <Container fluid className="position-relative   " style={{ minHeight: "100vh", overflow: "hidden" }}>
-    <video
-        autoPlay
-        loop
-        muted
-        className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-        style={{ zIndex: "-1" }}
-    >
-        <source src={backgroundVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
+    <>
+    
     <CustomNavbar/>
       <HeroSection />
       <AboutSection />
@@ -31,6 +21,6 @@ export const Home = () => {
       <TeamMembers />
       <Faq/>
       <Footer/>
-    </Container>
+      </>
   )
 }

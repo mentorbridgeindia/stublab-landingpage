@@ -4,7 +4,8 @@ import "./Navbar.scss";
 import logo from '../assets/logo.png';
 const CustomNavbar: React.FC = () => {
     return (
-        <Navbar expand="lg" className="custom-navbar">
+        
+        <Navbar expand="md" className="custom-navbar position-fixed ">
             <Navbar.Brand href="#" className="logo">
                 <img src={logo} alt="Logo" />
             </Navbar.Brand>

@@ -1,17 +1,14 @@
 import React from "react";
 import { Container, Row, Col, Badge, Button } from "react-bootstrap";
-import { FaCheckCircle, FaCogs, FaRegClock } from "react-icons/fa"; // Importing icons
+import { FaCheckCircle, FaCogs, FaRegClock } from "react-icons/fa"; 
 
-// const backgroundVideo = "/videos/backgroundvideo.mp4";
+const backgroundVideo = "/videos/backgroundvideo.mp4";
 
 const HeroSection: React.FC = () => {
     return (
-        <Container
-            fluid
-            className="position-relative text-center text-light py-5 d-flex align-items-center justify-content-center "
-            style={{ minHeight: "100vh", overflow: "hidden" }}
-        >
-            {/* <video 
+        <Container fluid className="position-relative text-light p-5 m" style={{ minHeight: "100vh", overflow: "hidden" }}>
+        
+            <video 
                 autoPlay 
                 loop 
                 muted 
@@ -20,7 +17,7 @@ const HeroSection: React.FC = () => {
             >
                 <source src={backgroundVideo} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video> */}
+            </video>
 
             <Row className="w-100 position-relative" style={{ zIndex: "1" }}>
                 <Col md={12} className="d-flex flex-column">
@@ -61,7 +58,7 @@ const HeroSection: React.FC = () => {
                     </div>
                 </Col>
             </Row>
-        </Container>
+            </Container>
     );
 };
 

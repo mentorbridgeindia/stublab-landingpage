@@ -4,10 +4,10 @@ import security from "../assets/security.svg";
 
 
 const AboutSection = () => {
-    // const backgroundVideo = "/videos/backgroundvideo.mp4";
+    const backgroundVideo = "/videos/backgroundvideo.mp4";
     return (
-        <Container fluid className="text-center text-light position-relative p-5 " style={{ minHeight: "100vh" }}>
-            {/* <video 
+        <Container fluid className="position-relative text-light p-5 " style={{ minHeight: "100vh", overflow: "hidden" }}>
+            <video 
                 autoPlay 
                 loop 
                 muted 
@@ -16,7 +16,7 @@ const AboutSection = () => {
             >
                 <source src={backgroundVideo} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video> */}
+            </video>
 
             <Row className="align-items-center position-relative" style={{ zIndex: "1" }}>
                 <Col lg={6}>

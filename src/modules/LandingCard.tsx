@@ -3,7 +3,7 @@ import { Button, Col, Container, Card, Badge, Row } from 'react-bootstrap';
 import { MdOutlineRocketLaunch } from "react-icons/md";
 import security from "../assets/security.svg";
 
-// const backgroundVideo = "/videos/backgroundvideo.mp4";
+const backgroundVideo = "/videos/backgroundvideo.mp4";
 const cardData = [
     {
         stage: "Stage 1",
@@ -28,7 +28,7 @@ const cardData = [
 const LandingCard = () => {
     return (
         <Container fluid className="position-relative text-light p-5 " style={{ minHeight: "100vh", overflow: "hidden" }}>
-            {/* <video 
+            <video 
                 autoPlay 
                 loop 
                 muted 
@@ -37,7 +37,7 @@ const LandingCard = () => {
             >
                 <source src={backgroundVideo} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video> */}
+            </video>
 
             <Row className="d-flex justify-content-center align-items-center" style={{ zIndex: "1" }}>
                 <Col lg={6} className="d-flex justify-content-center">
