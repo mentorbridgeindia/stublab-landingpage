@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Badge, Button } from "react-bootstrap";
 import { FaCheckCircle, FaCogs, FaRegClock } from "react-icons/fa";
+import hero1 from '../assets/hero1.svg';
+import hero2 from '../assets/hero2.svg';
 
 const backgroundVideo = "/videos/backgroundvideo.mp4";
 
@@ -19,8 +21,8 @@ const HeroSection: React.FC = () => {
                 Your browser does not support the video tag.
             </video>
 
-            <Row className="w-100 position-relative" style={{ zIndex: "1" }}>
-                <Col md={12} className="d-flex flex-column">
+            <Row className="w-100 position-relative d-flex p-5 " style={{ zIndex: "1" }}>
+                <Col md={6} className="d-flex flex-column">
                     <Badge
                         pill
                         bg="teriary"
@@ -29,12 +31,12 @@ const HeroSection: React.FC = () => {
                     >
                         🚀 Simplify API Testing
                     </Badge>
-                    <h1 className="display-4 fw-bold text-light text-center mt-5 mb-3">
-                        Create & Test APIs <br /> Without a Backend
+                    <h1 className=" display-3 text-light text-center mt-5 mb-3">
+                        Create & Test APIs Without a Backend
                     </h1>
-                    <p className="lead text-light text-center mt-3 mb-3">
+                    <p className="lead text-light text-center  mt-3 mb-3">
                         StubLab is your ultimate API mocking tool, enabling fast and flexible API testing
-                        <br />
+                        
                         without waiting for backend development.
                     </p>
                     <div className="d-flex justify-content-center gap-4 mt-3 mb-3">
@@ -52,10 +54,15 @@ const HeroSection: React.FC = () => {
                         <Button variant="light" size="lg" className="px-4 py-2 shadow-sm text-dark">
                             Get Started
                         </Button>
-                        <Button variant="outline-light" size="lg" className="px-4 py-2 shadow-sm">
-                            Learn More
-                        </Button>
+                        
                     </div>
+                </Col>
+                <Col className="d-flex justify-content-center pt-5 " md={6}>
+                    <img
+                        src={hero2}
+                        alt="StubLab Mockserver Illustration"
+                        className="img-fluid w-75"
+                    />
                 </Col>
             </Row>
         </Container>

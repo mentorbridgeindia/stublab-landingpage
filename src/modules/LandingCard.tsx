@@ -27,7 +27,7 @@ const cardData = [
 
 const LandingCard = () => {
     return (
-        <Container fluid className="position-relative text-light p-5 " style={{ minHeight: "100vh", overflow: "hidden" }}>
+        <Container fluid className="position-relative text-light p-5 " style={{  overflow: "hidden" }}>
             <video 
                 autoPlay 
                 loop 
@@ -99,7 +99,7 @@ const LandingCard = () => {
                 </Col>
 
                 <Col lg={6} className="d-flex flex-column justify-content-center text-center p-5"
-                    style={{ position: "sticky", top: "100px" }}>
+                    style={{ position: "sticky", top: "200px" }}>
                     <img
                         src={security}
                         alt="Mockserver Illustration"
