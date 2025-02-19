@@ -1,8 +1,7 @@
 import React from 'react';
 import { Button, Col, Container, Card, Badge, Row } from 'react-bootstrap';
 import { MdOutlineRocketLaunch } from "react-icons/md";
-import security from "../assets/security.svg";
-
+import card from '../assets/card.svg'
 const backgroundVideo = "/videos/backgroundvideo.mp4";
 const cardData = [
     {
@@ -101,7 +100,7 @@ const LandingCard = () => {
                 <Col lg={6} className="d-flex flex-column justify-content-center text-center p-5"
                     style={{ position: "sticky", top: "200px" }}>
                     <img
-                        src={security}
+                        src={card}
                         alt="Mockserver Illustration"
                         className="img-fluid"
                         style={{ maxWidth: "80%", height: "80%" }}

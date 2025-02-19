@@ -2,6 +2,7 @@ import React from "react";
 import { Badge, Button, Col, Container, Row } from "react-bootstrap";
 import { FaCheck } from "react-icons/fa";
 import about1 from "../assets/about.svg";
+import about2 from "../assets/about2.svg";
 
 const AboutSection = () => {
     const backgroundVideo = "/videos/backgroundvideo.mp4";
@@ -29,7 +30,7 @@ const AboutSection = () => {
             <Row className="align-items-center position-relative p-5" style={{ zIndex: "1" }}>
                 <Col className="d-flex justify-content-center pt-5 " md={6}>
                     <img
-                        src={about1}
+                        src={about2}
                         alt="StubLab Mockserver Illustration"
                         className="img-fluid w-75"
                     />
