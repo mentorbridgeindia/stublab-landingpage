@@ -7,7 +7,7 @@ import TeamMembers from '../modules/TeamMembers'
 import { Container, Nav } from 'react-bootstrap'
 import Faq from '../modules/Faq'
 import Footer from '../modules/Footer'
-import CustomNavbar from '../modules/Navbar'
+import CustomNavbar  from '../modules/Navbar'
 const backgroundVideo = "/videos/backgroundvideo.mp4";
 
 export const Home = () => {
