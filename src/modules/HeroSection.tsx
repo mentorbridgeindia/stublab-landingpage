@@ -59,7 +59,7 @@ const HeroSection: React.FC = () => {
                 </Col>
                 <Col className="d-flex justify-content-center pt-5 " md={6}>
                     <img
-                        src={hero2}
+                        src={hero1}
                         alt="StubLab Mockserver Illustration"
                         className="img-fluid w-75"
                     />

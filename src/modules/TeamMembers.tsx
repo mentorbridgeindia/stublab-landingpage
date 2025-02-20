@@ -48,7 +48,7 @@ const TeamMembers: React.FC = () => {
       }
     };
 
-    const interval = setInterval(scrollStep, 20);
+    const interval = setInterval(scrollStep, 10);
     return () => clearInterval(interval);
   }, []);
 
