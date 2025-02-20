@@ -8,6 +8,7 @@ import { Container, Nav } from 'react-bootstrap'
 import Faq from '../modules/Faq'
 import Footer from '../modules/Footer'
 import CustomNavbar from '../modules/Navbar'
+import { Components } from '../modules/Screens'
 const backgroundVideo = "/videos/backgroundvideo.mp4";
 
 export const Home = () => {
@@ -29,6 +30,7 @@ export const Home = () => {
       <HeroSection />
       <AboutSection />
       <LandingCard />
+      <Components/>
       <Features />
       <TeamMembers />
       <Faq />
