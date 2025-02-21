@@ -56,7 +56,7 @@ export const Components = () => {
             </div>
           </Col>
           <Col md={6} xs={12}>
-            <div className="d-flex justify-content-center flex-column gap-2 mt-5 align-items-center">
+            <div className="d-flex justify-content-center flex-column gap-3 mt-5 align-items-center">
               <img src={auth} className="img-fluid rounded-2 shadow-lg glassy-image" alt="account" />
               <img src={otp} alt="change" className="img-fluid rounded-2 shadow-lg glassy-image" style={{ width: "100%", height: "auto" }} />
             </div>

@@ -7,7 +7,7 @@ import img3 from '../assets/TeamMembers/sherin.png';
 import img4 from '../assets/TeamMembers/harini.jpg';
 import img5 from '../assets/TeamMembers/karthi.png';
 import img6 from '../assets/TeamMembers/viji.jpeg';
-import img7 from '../assets/TeamMembers/nivi.jpg'
+import img7 from '../assets/TeamMembers/nivi.png'
 import img8 from '../assets/TeamMembers/vijay.png';
 import img9 from '../assets/TeamMembers/pavi.jpg';
 import './TeamMembers.scss';
