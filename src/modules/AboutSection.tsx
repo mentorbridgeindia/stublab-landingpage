@@ -1,7 +1,6 @@
 import React from "react";
 import { Badge, Button, Col, Container, Row } from "react-bootstrap";
 import { FaCheck } from "react-icons/fa";
-import about1 from "../assets/about.svg";
 import about2 from "../assets/about2.svg";
 
 const AboutSection = () => {
