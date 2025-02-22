@@ -4,6 +4,7 @@ import { MdOutlineRocketLaunch } from "react-icons/md";
 import card1 from '../assets/api1.png';
 import card2 from '../assets/api2.png';
 import card3 from '../assets/api3.png';
+import './LandingCard.scss';
 
 const backgroundVideo = "/videos/backgroundvideo.mp4";
 
@@ -30,6 +31,7 @@ const cardData = [
         image: card3
     }
 ];
+
 const LandingCard = () => {
     const [activeCardIndex, setActiveCardIndex] = useState<number | null>(null);
     return (
@@ -45,15 +47,17 @@ const LandingCard = () => {
                 Your browser does not support the video tag.
             </video>
 
-            <div className='d-flex flex-column align-items-start  gap-3 p-5 ' style={{
-                color: 'white',
-                display: "flex",
-                flexDirection: "column",
-                gap: "20px",
-                overflowY: "auto",
-                maxHeight: "80vh",
-                marginLeft:"6rem"
-            }}>
+            <div className='d-flex flex-column align-items-start gap-3 p-4 px-md-5 desktop-margin mobile-align'
+                style={{
+                    color: 'white',
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "20px",
+                    overflowY: "auto",
+                    maxHeight: "80vh",
+                }}
+            >
+
                 <Button variant="outline-light" size="sm" className="px-4 py-2 shadow-sm">
                     New
                 </Button>
@@ -66,7 +70,7 @@ const LandingCard = () => {
                     <Row
                         key={index}
                         className="d-flex align-items-center mb-5 w-100"
-                        style={{ 
+                        style={{
                             flexDirection: index % 2 === 0 ? "row" : "row-reverse",
                             filter: activeCardIndex !== null && activeCardIndex !== index ? "blur(5px)" : "none",
                             transition: "filter 0.3s ease"
@@ -74,11 +78,12 @@ const LandingCard = () => {
                         onMouseEnter={() => setActiveCardIndex(index)}
                         onMouseLeave={() => setActiveCardIndex(null)}
                     >
-                        <Col lg={6} className="d-flex justify-content-center">
+                        <Col lg={6} md={12} className="d-flex justify-content-center mb-3">
                             <Card
                                 className="p-4 text-white position-relative"
                                 style={{
-                                    width: "28rem",
+                                    width: "100%",
+                                    maxWidth: "28rem",
                                     background: "linear-gradient(135deg, #0d0f1a, #08142e)",
                                     borderRadius: "20px",
                                     boxShadow: "0 0 20px rgba(0, 0, 0, 0.6)",
@@ -100,7 +105,7 @@ const LandingCard = () => {
                                     <Card.Text className="d-flex align-items-start text-start">
                                         {card.description}
                                     </Card.Text>
-                                    <div className="d-flex gap-3 mt-3">
+                                    <div className="d-flex flex-wrap gap-3 mt-3">
                                         {card.badges.map((badge, badgeIndex) => (
                                             <Badge
                                                 key={badgeIndex}
@@ -114,14 +119,15 @@ const LandingCard = () => {
                             </Card>
                         </Col>
 
-                        <Col lg={6} className="d-flex justify-content-center">
+                        <Col lg={6} md={12} className="d-flex justify-content-center image-container">
                             <img
                                 src={card.image}
                                 alt={`Illustration for ${card.title}`}
                                 className="img-fluid"
                                 style={{
-                                    width: "400px",
-                                    height: "300px",
+                                    width: "100%",
+                                    maxWidth: "400px",
+                                    height: "auto",
                                     objectFit: "cover",
                                     transition: "transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease",
                                     filter: activeCardIndex === index ? "brightness(1.2)" : "brightness(0.8)",

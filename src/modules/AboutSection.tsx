@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, Button, Col, Container, Row } from "react-bootstrap";
+import { Badge, Col, Container, Row } from "react-bootstrap";
 import { FaCheck } from "react-icons/fa";
 import about2 from "../assets/about2.svg";
 
@@ -14,7 +14,11 @@ const AboutSection = () => {
     ];
 
     return (
-        <Container fluid className="position-relative text-light p-5 " style={{ minHeight: "100vh", overflow: "hidden" }}>
+        <Container
+            fluid
+            className="position-relative text-light p-md-5 p-3"
+            style={{ minHeight: "100vh", overflow: "hidden" }}
+        >
             <video
                 autoPlay
                 loop
@@ -26,40 +30,40 @@ const AboutSection = () => {
                 Your browser does not support the video tag.
             </video>
 
-            <Row className="align-items-center position-relative p-5" style={{ zIndex: "1" }}>
-                <Col className="d-flex justify-content-center pt-5 " md={6}>
+            <Row className="align-items-center position-relative p-md-5 p-3" style={{ zIndex: "1" }}>
+                <Col xs={12} md={6} className="d-flex justify-content-center pt-3 pt-md-5">
                     <img
                         src={about2}
                         alt="StubLab Mockserver Illustration"
-                        className="img-fluid w-75"
+                        className="img-fluid w-100 w-md-75 h-auto"
                     />
                 </Col>
 
-                <Col lg={6}>
-                    <div className="d-flex flex-column gap-4">
-                        <div className="d-flex flex-column align-items-center align-items-lg-start  mt-3">
-                            <Badge
-                                bg=""
-                                style={{ borderRadius: "5px", padding: "8px 16px", background: "rgba(255, 255, 255, 0.1)", color: "#fff" }}
-                                className="text-light"
-                            >
-                                About StubLab
-                            </Badge>
-                        </div>
+                <Col xs={12} md={6} className="d-flex flex-column align-items-start mt-5">
+                    <Badge bg="dark"
+                        style={{
+                            borderRadius: "5px",
+                            padding: "8px 16px",
+                            background: "rgba(255, 255, 255, 0.1)",
+                            color: "#fff",
+                        }}
+                        className="text-light text-start"
+                    >
+                        About StubLab
+                    </Badge>
 
-                        <div className="d-flex flex-column align-items-start py-2 gap-3">
-                            <h2 className="text-light text-start">StubLab - The Ultimate API Mocking Solution</h2>
-                            <p className="text-light">Create, Iterate, and Test APIs without a backend!</p>
-                        </div>
+                    <h2 className="text-light text-start mt-3">StubLab - The Ultimate API Mocking Solution</h2>
+                    <p className="text-light text-start">
+                        Create, Iterate, and Test APIs without a backend!
+                    </p>
 
+                    <div className="d-flex flex-column gap-2">
                         {featureList.map((feature, index) => (
-                            <div className="d-flex align-items-center gap-3 " key={index}>
+                            <div className="d-flex align-items-center gap-2" key={index}>
                                 <FaCheck color="blue" />
-                                <p className="mb-1 text-light">{feature}</p>
+                                <p className="mb-0 text-light">{feature}</p>
                             </div>
                         ))}
-
-
                     </div>
                 </Col>
             </Row>
