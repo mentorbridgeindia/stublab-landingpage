@@ -127,7 +127,7 @@ const LandingCard = () => {
                                     filter: activeCardIndex === index ? "brightness(1.2)" : "brightness(0.8)",
                                     transform: activeCardIndex === index ? "scale(1.05)" : "scale(1)",
                                     boxShadow: "0px 10px 30px rgba(255, 255, 255, 0.2)",
-                                    borderRadius: "10px",
+                                    borderRadius: "20px",
                                 }}
                             />
                         </Col>

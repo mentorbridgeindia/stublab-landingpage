@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Badge, Button } from "react-bootstrap";
 import { FaCheckCircle, FaCogs, FaRegClock } from "react-icons/fa";
-import hero1 from '../assets/hero1.svg';
+import hero1 from '../assets/hero1.png';
 import hero2 from '../assets/hero2.svg';
 
 const backgroundVideo = "/videos/backgroundvideo.mp4";
@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
                     <img
                         src={hero1}
                         alt="StubLab Mockserver Illustration"
-                        className="img-fluid w-75"
+                        className="img-fluid w-100"
                     />
                 </Col>
             </Row>
