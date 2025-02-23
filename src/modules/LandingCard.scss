@@ -1,11 +1,9 @@
-// Base Styles
 $primary-bg: linear-gradient(135deg, #0d0f1a, #08142e);
 $card-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 $text-color: white;
 
 .container {
     position: relative;
-    text-light: #fff;
     padding: 5rem;
     overflow: hidden;
 }
@@ -19,11 +17,11 @@ video {
     object-fit: cover;
     z-index: -1;
 }
-.desktop-margin{
+
+.desktop-margin {
     margin-left: 5.5rem;
 }
 
-// Card Styling
 .card {
     padding: 2rem;
     background: $primary-bg;
@@ -57,7 +55,6 @@ video {
     }
 }
 
-// Rocket Icon
 .rocket {
     width: 50px;
     height: 50px;
@@ -66,7 +63,6 @@ video {
     border-radius: 10px;
 }
 
-// Stage Label
 .stage {
     position: absolute;
     top: 20px;
@@ -80,21 +76,20 @@ video {
 
 .image-container img {
     width: 100%;
-    max-width: 450px; // Increase this value if needed
-    height: 400px; // Set a larger fixed height
+    max-width: 450px;
+    height: 400px;
     object-fit: cover;
     transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
     filter: brightness(0.8);
-    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.797);
     border-radius: 20px;
 
     &:hover {
         transform: scale(1.05);
-        filter: brightness(1.2);
+        filter: brightness(0.8);
     }
 }
 
-// Responsive Styling
 @media (max-width: 991px) {
     .mobile-align {
         align-items: flex-start !important;
@@ -141,10 +136,12 @@ video {
         width: 16px !important;
         height: 16px !important;
     }
-    .mobile-align h1{
+
+    .mobile-align h1 {
         font-size: 22px !important;
     }
-    .mobile-align p{
+
+    .mobile-align p {
         font-size: 14px !important;
     }
 
