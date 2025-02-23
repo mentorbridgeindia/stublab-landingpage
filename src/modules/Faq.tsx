@@ -34,14 +34,15 @@ const Faq = () => {
         autoPlay 
         loop 
         muted 
-        className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+        playsInline
+        className="position-fixed top-0 start-0 w-100 h-100 object-fit-cover"
         style={{ zIndex: "-1" }}
       >
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       
-      <Container fluid className="faq-container position-relative text-light py-5">
+       <Container fluid className="position-relative text-light p-5" style={{ minHeight: '100vh', overflow: 'hidden' }}>
         <Row className="justify-content-center align-items-start g-4">
           <Col lg={5} md={12} className="text-center text-lg-start">
             <div className="faq-header">

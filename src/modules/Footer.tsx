@@ -13,6 +13,7 @@ const Footer = () => {
                 autoPlay 
                 loop 
                 muted 
+                playsInline
                 className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
                 style={{ zIndex: "-1" }}
             >

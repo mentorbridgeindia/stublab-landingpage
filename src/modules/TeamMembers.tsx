@@ -53,49 +53,52 @@ const TeamMembers: React.FC = () => {
   }, []);
 
   return (
-    <Container fluid className="position-relative text-light p-5" style={{ minHeight: '100vh', overflow: 'hidden' }}>
+    <div className="position-relative overflow-hidden">
       <video
         autoPlay
         loop
         muted
-        className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+        playsInline
+        className="position-fixed top-0 start-0 w-100 h-100 object-fit-cover"
         style={{ zIndex: "-1" }}
       >
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="d-flex flex-column gap-5">
-        <div className="d-flex flex-column gap-3 text-center">
-          <h2>Meet Our Team</h2>
-          <p>Our talented professionals who make it all happen.</p>
-        </div>
-
-        <div className="d-flex flex-column align-items-center gap-5">
-          <div className="team-scroll-container" ref={scrollRef}>
-            <div className="team-scroll-wrapper">
-              {duplicatedTeamMembers.map((member, index) => (
-                <div key={index} className="team-card-wrapper">
-                  <div className="team-card">
-                    <div className="team-image-container">
-                      <img src={member.img} className="team-image" alt={member.name} />
-                      <div className="social-icons">
-                        <a href={member.linkedin} aria-label="LinkedIn"><FaLinkedin /></a>
-                        <a href={member.github} aria-label="GitHub"><FaGithub /></a>
-                      </div>
-                    </div>
-                    <div className="card-body">
-                      <h5 className="team-name">{member.name}</h5>
-                      <p className="team-role">{member.role}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+      <Container fluid className="position-relative text-light p-5" style={{ minHeight: '100vh', overflow: 'hidden' }}>
+        <div className="d-flex flex-column gap-5">
+          <div className="d-flex flex-column gap-3 text-center">
+            <h2>Meet Our Team</h2>
+            <p>Our talented professionals who make it all happen.</p>
           </div>
 
+          <div className="d-flex flex-column align-items-center gap-5">
+            <div className="team-scroll-container" ref={scrollRef}>
+              <div className="team-scroll-wrapper">
+                {duplicatedTeamMembers.map((member, index) => (
+                  <div key={index} className="team-card-wrapper">
+                    <div className="team-card">
+                      <div className="team-image-container">
+                        <img src={member.img} className="team-image" alt={member.name} />
+                        <div className="social-icons">
+                          <a href={member.linkedin} aria-label="LinkedIn"><FaLinkedin /></a>
+                          <a href={member.github} aria-label="GitHub"><FaGithub /></a>
+                        </div>
+                      </div>
+                      <div className="card-body">
+                        <h5 className="team-name">{member.name}</h5>
+                        <p className="team-role">{member.role}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 
