@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
         <Container
             fluid
             className="position-relative text-light p-md-5 p-3 mt-3 mt-md-5"
-            style={{ minHeight: "100vh", overflow: "hidden" }}
+            style={{ minHeight: "60vh", overflow: "hidden" }}
         >
             <video
                 autoPlay
@@ -28,10 +28,10 @@ const HeroSection: React.FC = () => {
                     <Badge pill bg="dark" text="light" className="mb-3 px-3 py-2 shadow-sm">
                         🚀 Simplify API Testing
                     </Badge>
-                    <h1 className="display-5 text-light text-start mt-3 mb-3">
+                    <h1 className="text-light text-start mt-3 mb-3" >
                         Create & Test APIs Without a Backend
                     </h1>
-                    <p className="lead text-light text-start mt-3 mb-3">
+                    <p className=" text-light text-start mt-3 mb-3" >
                         StubLab is your ultimate API mocking tool, enabling fast and flexible API testing
                         without waiting for backend development.
                     </p>

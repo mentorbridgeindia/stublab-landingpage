@@ -58,14 +58,14 @@ const LandingCard = () => {
                 }}
             >
 
-                <Button variant="outline-light" size="sm" className="px-4 py-2 shadow-sm">
+                <Button variant="outline-light" size="sm" className="px-3 py-2 shadow-sm ">
                     New
                 </Button>
-                <h1>Welcome to StubLab</h1>
+                <h1 style={{fontSize: "2rem"}}>Welcome to StubLab</h1>
                 <p>API Mocking & Testing Made Easy</p>
             </div>
 
-            <Row className="d-flex justify-content-center align-items-center flex-column" style={{ zIndex: "1" }}>
+            <Row className="d-flex  justify-content-center align-items-center flex-column card-container" style={{ zIndex: "1" }}>
                 {cardData.map((card, index) => (
                     <Row
                         key={index}
@@ -92,11 +92,11 @@ const LandingCard = () => {
                                     transform: activeCardIndex === index ? "scale(1.05)" : "scale(1)"
                                 }}
                             >
-                                <div className="d-flex align-items-center gap-2 mb-3"
+                                <div className="d-flex align-items-center gap-2 mb-3 rocket"
                                     style={{ background: "rgba(255, 255, 255, 0.1)", padding: "10px 15px", borderRadius: "10px", width: "50px" }}>
-                                    <MdOutlineRocketLaunch size={20} color="white" />
+                                    <MdOutlineRocketLaunch size={20} color="white"  />
                                 </div>
-                                <div className="position-absolute"
+                                <div className="position-absolute stage"
                                     style={{ top: "20px", right: "20px", background: "rgba(255, 255, 255, 0.1)", padding: "6px 12px", borderRadius: "10px", fontSize: "14px", color: "#fff" }}>
                                     {card.stage}
                                 </div>
