@@ -118,3 +118,60 @@ $head-card-border: 1px solid rgba(255, 255, 255, 0.1);
 
     
 }
+
+@media (max-width: 768px) {
+    .team-scroll-container {
+        padding: 10px 0;
+    }
+
+    .team-scroll-wrapper {
+        flex-wrap: nowrap;
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 10px;
+        -webkit-overflow-scrolling: touch;
+        min-width: 100%; 
+    }
+
+    .team-card-wrapper {
+        flex: 0 0 auto;
+        width: 14rem; 
+        scroll-snap-align: start;
+    }
+
+    .team-card {
+        width: 100%;
+        height:85%;
+        padding: 1rem;
+    }
+
+    .team-image-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .social-icons {
+        opacity: 1 !important; 
+        background-color: transparent; 
+        position: relative;
+        top: auto;
+        left: auto;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+    }
+
+    .team-name {
+        font-size: 1rem;
+    }
+
+    .team-role {
+        font-size: 0.8rem;
+    }
+}

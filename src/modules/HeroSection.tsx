@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
                             <FaCheckCircle /> AI-Powered Mock Data
                         </div>
                         <div className="d-flex align-items-center gap-2 text-light">
-                            <FaCogs /> Customize API Responses
+                            <FaCogs /> Customize Responses
                         </div>
                         <div className="d-flex align-items-center gap-2 text-light">
                             <FaRegClock /> Real-time API Logs

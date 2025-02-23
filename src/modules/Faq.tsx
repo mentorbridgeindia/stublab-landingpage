@@ -40,22 +40,19 @@ const Faq = () => {
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      
       <Container fluid className="faq-container position-relative text-light py-5">
-        <Row className="justify-content-center align-items-start g-5">
-          <Col lg={5} className="pe-lg-5">
-            <div className="sticky-top pt-5">
-              <div className="d-flex flex-column align-items-start gap-3 mb-4">
-                <Badge className="custom-badge">FAQ</Badge>
-                <h1 className="display-4 mb-0 fw-bold">Frequently</h1>
-                <h1 className="display-4 text-secondary mb-0 fw-bold">Asked Questions</h1>
-              </div>
-              <p className="text-secondary mb-0 pe-lg-5">
-                Have questions about StubLab? Find answers to common queries about API mocking, customization, security, and more.
-              </p>
+        <Row className="justify-content-center align-items-start g-4">
+          <Col lg={5} md={12} className="text-center text-lg-start">
+            <div className="faq-header">
+              <Badge className="custom-badge">FAQ</Badge>
+              <h1 className="display-5 fw-bold">Frequently</h1>
+              <h1 className="display-5 text-secondary fw-bold">Asked Questions</h1>
+              <p className="text-secondary">Have questions about StubLab? Find answers to common queries about API mocking, customization, security, and more.</p>
             </div>
           </Col>
 
-          <Col lg={5} className="ps-lg-5">
+          <Col lg={5} md={12}>
             <Accordion className="custom-accordion">
               {faqData.map((faq, index) => (
                 <Accordion.Item key={index} eventKey={index.toString()}>

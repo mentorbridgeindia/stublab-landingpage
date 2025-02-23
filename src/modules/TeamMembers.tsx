@@ -92,6 +92,7 @@ const TeamMembers: React.FC = () => {
               ))}
             </div>
           </div>
+
         </div>
       </div>
     </Container>

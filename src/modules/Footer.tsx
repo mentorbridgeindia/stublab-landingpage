@@ -34,7 +34,7 @@ const Footer = () => {
                     </div>
                 </Col>
 
-                <Col lg={2} className='text-start'>
+                <Col lg={2} xs={6} className='text-start'>
                     <h5 className="footer-title">Company</h5>
                     <ul className="footer-links">
                         <li><a href="#about">About</a></li>
@@ -45,7 +45,7 @@ const Footer = () => {
                     </ul>
                 </Col>
                 
-                <Col lg={2} className='text-start'>
+                <Col lg={2} xs={6} className='text-start'>
                     <h5 className="footer-title">Legal & Security</h5>
                     <ul className="footer-links">
                         <li><a href="#features">Terms of Services</a></li>
