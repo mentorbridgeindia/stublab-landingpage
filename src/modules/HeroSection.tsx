@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Badge, Button } from "react-bootstrap";
 import { FaCheckCircle, FaCogs, FaRegClock } from "react-icons/fa";
-import hero1 from "../assets/hero1.png";
+import hero1 from "../assets/hero1.svg";
 
 
 const HeroSection: React.FC = () => {

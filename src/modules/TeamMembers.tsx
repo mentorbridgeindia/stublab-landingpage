@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import img1 from '../assets/TeamMembers/umar.jpg';
+import img1 from '../assets/TeamMembers/umar.png';
 import img2 from '../assets/TeamMembers/Devaki.png';
 import img3 from '../assets/TeamMembers/sherin.png';
 import img4 from '../assets/TeamMembers/harini.jpg';
