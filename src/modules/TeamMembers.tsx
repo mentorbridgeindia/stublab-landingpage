@@ -25,7 +25,6 @@ const teamMembers = [
 ];
 
 const duplicatedTeamMembers = [...teamMembers, ...teamMembers];
-const backgroundVideo = "/videos/backgroundvideo.mp4";
 
 const TeamMembers: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -78,17 +77,6 @@ const TeamMembers: React.FC = () => {
   return (
       
       <Container fluid className="position-relative text-light p-5" style={{ minHeight: '100vh', overflow: 'hidden' }}>
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="position-fixed top-0 start-0 w-100 h-100 object-fit-cover"
-        style={{ zIndex: "-1" }}
-      >
-        <source src={backgroundVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
         <div className="d-flex flex-column gap-5">
           <div className="d-flex flex-column gap-3 text-center">
             <h2>Meet Our Team</h2>

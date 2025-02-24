@@ -4,24 +4,10 @@ import screen2 from "../assets/screen2.png";
 import screen3 from "../assets/screen3.png";
 import screen4 from "../assets/screen4.png";
 import './Screens.scss';
-const backgroundVideo = "/videos/backgroundvideo.mp4";
 
 
 export const Components = () => {
   return (
-    <div className="position-relative overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="position-fixed top-0 start-0 w-100 h-100 object-fit-cover"
-        style={{ zIndex: "-1" }}
-      >
-        <source src={backgroundVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
       <Container className="py-5 mt-5 features-container position-relative">
         <Row className="mt-5">
           <Col md={6} xs={12} className="text-center">
@@ -65,6 +51,5 @@ export const Components = () => {
           </Col>
         </Row>
       </Container>
-    </div>
   );
 };

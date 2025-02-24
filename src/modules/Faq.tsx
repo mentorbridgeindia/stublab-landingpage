@@ -25,22 +25,10 @@ const faqData = [
   }
 ];
 
-const backgroundVideo = "/videos/backgroundvideo.mp4";
 
 const Faq = () => {
   return (
-    <div className="position-relative overflow-hidden">
-      <video 
-        autoPlay 
-        loop 
-        muted 
-        playsInline
-        className="position-fixed top-0 start-0 w-100 h-100 object-fit-cover"
-        style={{ zIndex: "-1" }}
-      >
-        <source src={backgroundVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    
       
        <Container fluid className="position-relative text-light p-5" style={{ minHeight: '100vh', overflow: 'hidden' }}>
         <Row className="justify-content-center align-items-start g-4">
@@ -64,8 +52,9 @@ const Faq = () => {
             </Accordion>
           </Col>
         </Row>
+        
       </Container>
-    </div>
+      
   );
 };
 

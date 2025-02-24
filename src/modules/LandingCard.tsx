@@ -6,7 +6,6 @@ import card2 from '../assets/api2.png';
 import card3 from '../assets/api3.png';
 import './LandingCard.scss';
 
-const backgroundVideo = "/videos/backgroundvideo.mp4";
 
 const cardData = [
     {
@@ -36,17 +35,6 @@ const LandingCard = () => {
     const [activeCardIndex, setActiveCardIndex] = useState<number | null>(null);
     return (
         <Container fluid className="position-relative text-light p-5" style={{ overflow: "hidden" }}>
-            <video
-                autoPlay
-                loop
-                muted
-                className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-                style={{ zIndex: "-1" }}
-            >
-                <source src={backgroundVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-
             <div className='d-flex flex-column align-items-start gap-3 p-4 px-md-5 desktop-margin mobile-align'
                 style={{
                     color: 'white',

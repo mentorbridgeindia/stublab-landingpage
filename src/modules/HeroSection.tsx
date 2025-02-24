@@ -3,7 +3,6 @@ import { Container, Row, Col, Badge, Button } from "react-bootstrap";
 import { FaCheckCircle, FaCogs, FaRegClock } from "react-icons/fa";
 import hero1 from "../assets/hero1.png";
 
-const backgroundVideo = "/videos/backgroundvideo.mp4";
 
 const HeroSection: React.FC = () => {
     return (
@@ -12,17 +11,6 @@ const HeroSection: React.FC = () => {
             className="position-relative text-light p-md-5 p-3 mt-3 mt-md-5"
             style={{ minHeight: "60vh", overflow: "hidden" }}
         >
-            <video
-                autoPlay
-                loop
-                muted
-                className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-                style={{ zIndex: "-1" }}
-            >
-                <source src={backgroundVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-
             <Row className="w-100 position-relative d-flex p-md-5 p-5" style={{ zIndex: "1" }}>
                 <Col md={6} className="d-flex flex-column align-items-start">
                     <Badge pill bg="dark" text="light" className="mb-3 px-3 py-2 shadow-sm">

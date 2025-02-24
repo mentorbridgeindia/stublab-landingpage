@@ -4,7 +4,6 @@ import { FaCheck } from "react-icons/fa";
 import about2 from "../assets/about2.svg";
 
 const AboutSection = () => {
-    const backgroundVideo = "/videos/backgroundvideo.mp4";
 
     const featureList = [
         "Mock APIs Instantly",
@@ -19,16 +18,7 @@ const AboutSection = () => {
             className="position-relative text-light p-md-5 p-3"
             style={{ minHeight: "100vh", overflow: "hidden" }}
         >
-            <video
-                autoPlay
-                loop
-                muted
-                className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-                style={{ zIndex: "-1" }}
-            >
-                <source src={backgroundVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+           
 
             <Row className="align-items-center position-relative p-md-5 p-3" style={{ zIndex: "1" }}>
                 <Col xs={12} md={6} className="d-flex justify-content-center pt-3 pt-md-5">
