@@ -15,14 +15,13 @@ import './TeamMembers.scss';
 const teamMembers = [
   { name: 'Umar Farook J', role: 'Analyst', img: img1, linkedin: '#', github: '#' },
   { name: 'Devaki R', role: 'Backend Lead', img: img2, linkedin: '#', github: '#' },
-  { name: 'Sherin Sithara M', role: 'Backend', img: img3, linkedin: '#', github: '#' },
-  { name: 'Harini S', role: 'Backend', img: img4, linkedin: '#', github: '#' },
-  { name: 'Karthekeyan M', role: 'Frontend', img: img5, linkedin: '#', github: '#' },
-  { name: 'Vijayalakshmi T', role: 'Frontend', img: img6, linkedin: '#', github: '#' },
-  { name: 'Nivethitha M', role: 'Frontend', img: img7, linkedin: '#', github: '#' },
-  { name: 'Vijay Karthik T', role: 'Frontend', img: img8, linkedin: '#', github: '#' },
-  { name: 'Pavithra Harini S', role: 'Frontend', img: img9, linkedin: '#', github: '#' },
-
+  { name: 'Sherin Sithara M', role: 'Dev-Engineer | Java', img: img3, linkedin: '#', github: '#' },
+  { name: 'Harini S', role: 'Dev-Engineer | Java', img: img4, linkedin: '#', github: '#' },
+  { name: 'Karthekeyan M', role: 'Dev-Engineer | React', img: img5, linkedin: '#', github: '#' },
+  { name: 'Vijayalakshmi T', role: 'Dev-Engineer | React', img: img6, linkedin: '#', github: '#' },
+  { name: 'Nivethitha M', role: 'Dev-Engineer | Node', img: img7, linkedin: '#', github: '#' },
+  { name: 'Vijay Karthik S', role: 'Dev-Engineer | React', img: img8, linkedin: '#', github: '#' },
+  { name: 'Pavithra Harini S', role: 'Dev-Engineer | Node', img: img9, linkedin: '#', github: '#' },
 ];
 
 const duplicatedTeamMembers = [...teamMembers, ...teamMembers];
