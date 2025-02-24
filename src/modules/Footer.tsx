@@ -60,11 +60,11 @@ const Footer = () => {
                 <Col lg={2} className='text-start'>
                     <h5 className="footer-title mb-2">Follow Us</h5>
                     <ul className="footer-links">
-                        <li><a href="#twitter"><FaTwitter className="social-icon" /> Twitter (X)</a></li>
-                        <li><a href="#instagram"><FaInstagram className="social-icon" /> Instagram</a></li>
-                        <li><a href="#youtube"><FaYoutube className="social-icon" /> YouTube</a></li>
-                        <li><a href="#linkedin"><FaLinkedin className="social-icon" /> LinkedIn</a></li>
-                        <li><a href="#facebook"><FaFacebook className="social-icon" /> Facebook</a></li>
+                        <li><a href="https://x.com/Stublab_India"><FaTwitter className="social-icon" /> Twitter (X)</a></li>
+                        <li><a href="https://www.instagram.com/stublab_india"><FaInstagram className="social-icon" /> Instagram</a></li>
+                        <li><a href="https://www.youtube.com/@StubLab_India"><FaYoutube className="social-icon" /> YouTube</a></li>
+                        <li><a href="https://www.linkedin.com/company/stublab/"><FaLinkedin className="social-icon" /> LinkedIn</a></li>
+                        <li><a href="https://www.facebook.com/people/StubLab-India/pfbid0amYdD9N77MNCrw4A1NiLki6F434Wouwn6sW8edGMAB5GQCXwYinLhmzEKvuK7wnwl/"><FaFacebook className="social-icon" /> Facebook</a></li>
                     </ul>
                 </Col>
             </Row>
