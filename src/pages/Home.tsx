@@ -8,6 +8,7 @@ import Faq from '../modules/Faq'
 import Footer from '../modules/Footer'
 import CustomNavbar from '../modules/Navbar'
 import { Components } from '../modules/Screens'
+import VideoSection from '../modules/VideoSection'
 
 const backgroundVideo = "/videos/backgroundvideo.mp4";
 export const Home = () => {
@@ -33,7 +34,7 @@ export const Home = () => {
       <LandingCard />
       <Components/>
       <Features />
-      
+      <VideoSection videoId='' />
       <TeamMembers />
       <Faq />
       <Footer />
