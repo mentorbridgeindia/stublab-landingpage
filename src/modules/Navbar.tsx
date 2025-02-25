@@ -15,7 +15,6 @@ const CustomNavbar: React.FC = () => {
       const scrollDifference = Math.abs(currentScrollPos - prevScrollPos);
   
       if (currentScrollPos === 0) {
-        // If user reaches the top, re-trigger animation
         setVisible(true);
         setIsAnimating(true);
         setTimeout(() => setIsAnimating(false), 600);

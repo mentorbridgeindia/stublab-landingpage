@@ -2,7 +2,6 @@ import React from 'react';
 import { Button, Container, Card, Row, Col, Badge } from 'react-bootstrap';
 import { FaServer, FaBrain, FaCodeBranch, FaBug, FaClock, FaShieldAlt } from "react-icons/fa";
 
-const backgroundVideo = "/videos/backgroundvideo.mp4"; 
 const featuresData = [
     {
         icon: <FaServer size={30} className="text-light" />,
@@ -46,59 +45,56 @@ const featuresData = [
 
 const Features = () => {
     return (
-        <Container fluid className="position-relative text-light p-5 " style={{ minHeight: "100vh", overflow: "hidden" }}>
-            <video 
-                autoPlay 
-                loop 
-                muted 
-                className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-                style={{ zIndex: "-1" }}
-            >
-                <source src={backgroundVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+        
+            <Container fluid className="position-relative text-light p-5 " style={{ minHeight: "100vh", overflow: "hidden" }}>
 
-            <div className="d-flex flex-column align-items-center gap-5 position-relative" style={{ zIndex: "1" }}>
-                <div className="text-center mb-4">
-                    <Button variant="outline-light">Features</Button>
-                    <h1 className="mt-3">StubLab Features</h1>
-                    <p>Create, Iterate, and Test APIs Faster</p>
-                    <Button variant="outline-light">View More</Button>
+                <div className="d-flex flex-column align-items-center gap-5 position-relative text-center" style={{ zIndex: "1" }}>
+                    <div className="text-center mb-4">
+                        <Button variant="outline-light" size='sm'>Features</Button>
+                        <h1 className="mt-3 fs-2">StubLab Features</h1>
+                        <p >Create, Iterate, and Test APIs Faster</p>
+                    </div>
+
+                    <Row className="g-5" style={{ maxWidth: "1200px" }}>
+                        {featuresData.map((feature, index) => (
+                            <Col key={index} md={4} sm={6} xs={12}>
+                                <Card
+                                    className="text-white p-3 border-0 shadow-lg position-relative"
+                                    style={{
+                                        background: "linear-gradient(135deg, #0d0f1a, #08142e)",
+                                        borderRadius: "20px",
+                                        boxShadow: "0 0 20px rgba(0, 0, 0, 0.6)",
+                                        border: "none",
+                                    }}
+                                >
+                                    {feature.badge && (
+                                        <Badge
+                                            bg="dark"
+                                            className="position-absolute my-3 end-0 mx-4 d-block d-sm-none "
+                                            style={{ padding: "6px 12px", fontSize: "0.75rem", borderRadius: "8px" }}
+                                        >
+                                            {feature.badge}
+                                        </Badge>
+                                    )}
+                                    <Card.Body className='d-flex flex-column gap-1'>
+                                        <div className="d-flex align-items-start mb-3 flex-column gap-2">
+                                            {feature.icon}
+                                            <h5 className='d-flex flex-row gap-3'>
+                                                {feature.title}{" "}
+                                                {feature.badge && <Badge bg='primary' className='d-none d-sm-inline'>{feature.badge}</Badge>}
+                                            </h5>
+                                        </div>
+                                        <Card.Subtitle className="mb-1 text-start">{feature.subtitle}</Card.Subtitle>
+                                        <Card.Text className="mt-1 text-start">{feature.description}</Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        ))}
+                    </Row>
+
+
                 </div>
-
-                <Row className="g-5" style={{ maxWidth: "1200px" }}>
-                    {featuresData.map((feature, index) => (
-                        <Col key={index} md={4} sm={6}>
-                            <Card
-                                className="text-white p-3 border-0 shadow-lg"
-                                style={{
-                                    background: "linear-gradient(135deg, #0d0f1a, #08142e)",
-                                    borderRadius: "20px",
-                                    boxShadow: "0 0 20px rgba(0, 0, 0, 0.6)",
-                                    border: "none",
-                                }}
-                            >
-                                <Card.Body className='d-flex flex-column gap-1'>
-                                    <div className="d-flex align-items-start mb-3 flex-column gap-2">
-                                        {feature.icon}
-                                        <h5 className='d-flex flex-row gap-3'>
-                                            {feature.title}{" "}
-                                            {feature.badge && <Badge bg='primary'>{feature.badge}</Badge>}
-                                        </h5>
-                                    </div>
-                                    <Card.Subtitle className="mb-1 text-start">{feature.subtitle}</Card.Subtitle>
-                                    <Card.Text className="mt-1 text-start">{feature.description}</Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    ))}
-                </Row>
-
-                <div className="text-center mt-4">
-                    <Button variant="outline-light">View More</Button>
-                </div>
-            </div>
-        </Container>
+            </Container>
     );
 };
 

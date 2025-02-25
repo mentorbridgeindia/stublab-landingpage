@@ -1,0 +1,197 @@
+$primary-bg: linear-gradient(135deg, #0d0f1a, #08142e);
+$card-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+$text-color: white;
+
+.container {
+    position: relative;
+    padding: 5rem;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.desktop-margin {
+    margin-left: 5.5rem;
+}
+
+.card {
+    padding: 2rem;
+    background: $primary-bg;
+    border-radius: 20px;
+    box-shadow: $card-shadow;
+    border: none;
+    transition: transform 0.3s ease;
+    max-width: 28rem;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: start;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        text-align: start;
+    }
+
+    .badge {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+    }
+}
+
+.rocket {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.stage {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+    filter: brightness(0.8);
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.797);
+    border-radius: 20px;
+
+    &:hover {
+        transform: scale(1.05);
+        filter: brightness(0.8);
+    }
+}
+
+@media (max-width: 991px) {
+    .mobile-align {
+        align-items: flex-start !important;
+        text-align: left !important;
+        margin-left: 0 !important;
+        padding-left: 1rem !important;
+    }
+
+    .image-container img {
+        max-width: 350px !important;
+        box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-height: max-content !important;
+        padding: 2rem !important;
+        width: 90% !important;
+    }
+
+    .card-title {
+        font-size: 1.2rem !important;
+        text-align: start !important;
+    }
+
+    .card-text {
+        font-size: 0.9rem !important;
+        text-align: start !important;
+    }
+
+    .badge {
+        padding: 6px 10px !important;
+        font-size: 0.7rem !important;
+    }
+
+    .rocket {
+        width: 35px !important;
+        height: 35px !important;
+        padding: 4px 8px !important;
+    }
+
+    .rocket svg {
+        width: 16px !important;
+        height: 16px !important;
+    }
+
+    .mobile-align h1 {
+        font-size: 22px !important;
+    }
+
+    .mobile-align p {
+        font-size: 14px !important;
+    }
+
+    .stage {
+        padding: 6px 10px !important;
+        font-size: 0.6rem !important;
+    }
+
+    .image-container img {
+        max-width: 100% !important;
+        height: auto !important;
+        box-shadow: none !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        margin: 0rem 0rem !important;
+        width: 100% !important;
+    }
+
+    .image-container img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .card-text {
+        font-size: 0.6rem !important;
+        text-align: start !important;
+        justify-content: start !important;
+    }
+
+    .card .card-title {
+        font-size: 0.9rem !important;
+        text-align: start !important;
+    }
+
+    .rocket {
+        width: 30px !important;
+        height: 30px !important;
+        padding: 4px 8px !important;
+    }
+
+    .stage {
+        font-size: 0.6rem !important;
+    }
+
+    .badge {
+        font-size: 0.5rem !important;
+        display: flex !important;
+        display: inline-block;
+    }
+}
