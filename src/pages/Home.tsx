@@ -33,6 +33,7 @@ export const Home = () => {
       <LandingCard />
       <Components/>
       <Features />
+      
       <TeamMembers />
       <Faq />
       <Footer />
