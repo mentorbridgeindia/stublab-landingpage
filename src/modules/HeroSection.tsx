@@ -40,8 +40,8 @@ const HeroSection: React.FC = () => {
                         </Button>
                     </div>
                 </Col>
-                <Col md={6} className="d-flex justify-content-center pt-5 d-none d-md-flex">
-                    <img src={hero1} alt="StubLab Mockserver Illustration" className="img-fluid w-75 w-md-100 h-auto" />
+                <Col md={6} className="d-flex justify-content-center pt-2 d-none d-md-flex ">
+                    <img src={hero1} alt="StubLab Mockserver Illustration" className="img-fluid w-100 w-md-100 h-auto" />
                 </Col>
             </Row>
         </Container>
