@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "./Navbar.scss";
-import logo from '../assets/logo.png';
+import logo from '../assets/stublab-logo.svg';
 
 const CustomNavbar: React.FC = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
