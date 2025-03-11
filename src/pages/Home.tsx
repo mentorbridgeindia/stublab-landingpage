@@ -9,6 +9,7 @@ import Footer from '../modules/Footer'
 import CustomNavbar from '../modules/Navbar'
 import { Components } from '../modules/Screens'
 import VideoSection from '../modules/VideoSection'
+import ContactSection from '../modules/ContactSection'
 
 const backgroundVideo = "/videos/backgroundvideo.mp4";
 export const Home = () => {
@@ -34,9 +35,10 @@ export const Home = () => {
       <LandingCard />
       <Components/>
       <Features />
-      <VideoSection videoId='' />
+      <VideoSection demoLink={''} />
       <TeamMembers />
       <Faq />
+      <ContactSection />
       <Footer />
     </>
   )

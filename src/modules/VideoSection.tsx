@@ -15,13 +15,18 @@ const VideoSection: React.FC<VideoSection> = ({ demoLink }) => {
                         See how StubLab streamlines API development with flexible stubbing and instant mock data generation.
                     </p>
                 </div>
-                <div style="position: relative; box-sizing: content-box; max-height: 80vh; max-height: 80svh; width: 100%; aspect-ratio: 2.090308370044053; padding: 40px 0 40px 0;">
+                <div style={{ position: 'relative', boxSizing: 'content-box', maxHeight: '80vh', width: '100%', aspectRatio: '2.090308370044053', padding: '40px 0' }}>
                     <iframe 
-                    src="https://app.supademo.com/embed/cm7k4wzk4012e360ip79gzyd2?embed_v=2" loading="lazy" title="Product demo for StubLab" allow="clipboard-write" frameborder="0" 
-                    webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen 
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                    </iframe>
+                        src="https://app.supademo.com/embed/cm7k4wzk4012e360ip79gzyd2?embed_v=2" 
+                        loading="lazy" 
+                        title="Product demo for StubLab" 
+                        allow="clipboard-write" 
+                        frameBorder="0" 
+                        allowFullScreen 
+                        style={{ position: 'relative', top: 0, left: 0, width: '90%', height: '90%' }}
+                    ></iframe>
                 </div>
+
             </section>
         </div>
     );

@@ -1,0 +1,38 @@
+
+
+.container {
+    color: #fff;
+}
+
+input, textarea {
+    background: transparent !important;
+    color: #fff !important;
+    border: 2px solid transparent;
+    border-color: #007bff !important;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+    &::placeholder {
+        color: #e4dfdf !important;
+    }
+
+    &:focus {
+        border-color: #7cb7f7;
+        box-shadow: 20 0 40px rgba(0, 123, 255, 0.75);
+    }
+}
+
+
+.btn-dark {
+    background: #035dbe;
+    color: #fff;
+    border: none;
+
+    &:hover {
+        background: #033f7f;
+    }
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
