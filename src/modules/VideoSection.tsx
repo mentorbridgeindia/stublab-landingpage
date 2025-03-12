@@ -5,7 +5,7 @@ interface VideoSection {
     demoLink: string;
 }
 
-const VideoSection: React.FC<VideoSection> = ({ demoLink }) => {
+const VideoSection: React.FC<VideoSection> = () => {
     return (
         <div className="h-screen flex items-center bg-gray-100 p-8 pt-40">
             <section className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-20">
