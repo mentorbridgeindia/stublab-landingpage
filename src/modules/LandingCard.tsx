@@ -34,7 +34,7 @@ const cardData = [
 const LandingCard = () => {
     const [activeCardIndex, setActiveCardIndex] = useState<number | null>(null);
     return (
-        <Container fluid className="position-relative text-light p-5" style={{ overflow: "hidden" }}>
+        <Container fluid className="position-relative text-light p-5" style={{ overflow: "hidden" }} id='docs'>
             <div className='d-flex flex-column align-items-start gap-3 p-4 px-md-5 desktop-margin mobile-align'
                 style={{
                     color: 'white',

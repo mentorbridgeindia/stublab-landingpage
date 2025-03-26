@@ -45,7 +45,7 @@ const CustomNavbar = () => {
       className={`custom-navbar ${!visible ? "navbar-hidden" : ""} ${
         isAnimating ? "animate__animated animate__fadeInDown" : ""
       }`}
-    >
+      id='contact' >
       <Navbar.Brand href="#" className="logo">
         <img src={logo} alt="Logo" />
       </Navbar.Brand>
@@ -66,7 +66,7 @@ const CustomNavbar = () => {
             Register
           </Nav.Link>
           <Nav.Link href="#account">Account</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          {/* <Nav.Link href="#contact">Contact</Nav.Link> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
