@@ -8,6 +8,7 @@ import LandingCard from "../modules/LandingCard";
 import CustomNavbar from "../modules/Navbar";
 import { Components } from "../modules/Screens";
 import TeamMembers from "../modules/TeamMembers";
+import TermsOfService from "../modules/TermsOfService";
 import VideoSection from "../modules/VideoSection";
 
 const backgroundVideo = "/videos/backgroundvideo.mp4";

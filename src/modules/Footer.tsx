@@ -30,8 +30,6 @@ const Footer = () => {
                         <h5 className="footer-title">Company</h5>
                         <ul className="footer-links">
                             <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
-                            <li><a href="#docs">API Documentation</a></li>
                             <li><a href="#support">Support</a></li>
                             <li><a href="#faq">FAQ</a></li>
                         </ul>
@@ -40,11 +38,9 @@ const Footer = () => {
                     <Col lg={2} xs={6} className='text-start'>
                         <h5 className="footer-title">Legal & Security</h5>
                         <ul className="footer-links">
-                            <li><a href="#features">Terms of Services</a></li>
-                            <li><a href="#pricing">Privacy Policy</a></li>
-                            <li><a href="#cookie-policy">Cookie Policy</a></li>
+                            <li><a href="/terms-of-service">Terms of Service</a></li>
+                            <li><a href="/privacy-policy">Privacy Policy</a></li>
                             <li><a href="#security">Security</a></li>
-                            <li><a href="#compliance">Compliance</a></li>
                         </ul>
                     </Col>
 
