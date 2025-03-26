@@ -55,8 +55,8 @@ const CustomNavbar: React.FC = () => {
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="https://stublab.securosphere.in/login" rel="noopener noreferrer">Login</Nav.Link>
           <Nav.Link href="https://stublab.securosphere.in/register" rel="noopener noreferrer">Register</Nav.Link>
-          <Nav.Link href="#account">Account</Nav.Link>
-          {/* <Nav.Link href="#contact">Contact</Nav.Link> */}
+          {/* <Nav.Link href="#account">Account</Nav.Link> */}
+          <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
