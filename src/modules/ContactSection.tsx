@@ -4,13 +4,13 @@ import './ContactSection.scss';
 
 const ContactSection: React.FC = () => {
     return (
-        <div className="container d-flex justify-content-center align-items-center mt-5">
+        <div id='contact' className="container d-flex justify-content-center align-items-center mt-5">
             <div className="row w-100" style={{ maxWidth: '1200px' }}>
-                
+
                 <div className="col-md-6 p-4 bg-transparent rounded-2xl shadow-lg">
                     <h2 className="text-center mb-4">Contact Information</h2>
                     <p className="text-center mb-4">
-                    Building real solutions starts with mock ideas. Reach out — let’s refine, test, and create together.
+                        Building real solutions starts with mock ideas. Reach out — let’s refine, test, and create together.
                     </p>
                     <ul className="list-unstyled">
                         <li className="d-flex align-items-center mb-3">
@@ -31,7 +31,7 @@ const ContactSection: React.FC = () => {
                 <div className="col-md-6 p-4 bg-transparent rounded-2xl shadow-lg">
                     <h2 className="text-center mb-4">Reach Out to Us</h2>
                     <p className="text-center mb-4">
-                    Communication is the bridge to innovation — we’d love to hear from you.
+                        Communication is the bridge to innovation — we’d love to hear from you.
                     </p>
                     <form className="d-grid gap-3">
                         <div className="row">

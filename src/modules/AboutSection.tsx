@@ -16,7 +16,7 @@ const AboutSection = () => {
         <Container
             fluid
             className="position-relative text-light p-md-5 p-3"
-            style={{ minHeight: "100vh", overflow: "hidden" }}
+            style={{ minHeight: "100vh", overflow: "hidden" }} id="about"
         >
            
 

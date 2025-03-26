@@ -45,7 +45,7 @@ const CustomNavbar: React.FC = () => {
       className={`custom-navbar ${!visible ? 'navbar-hidden' : ''} ${
         isAnimating ? 'animate__animated animate__fadeInDown' : ''
       }`}
-    >
+      id='contact' >
       <Navbar.Brand href="#" className="logo">
         <img src={logo} alt="Logo" />
       </Navbar.Brand>
@@ -56,7 +56,7 @@ const CustomNavbar: React.FC = () => {
           <Nav.Link href="https://stublab.securosphere.in/login" rel="noopener noreferrer">Login</Nav.Link>
           <Nav.Link href="https://stublab.securosphere.in/register" rel="noopener noreferrer">Register</Nav.Link>
           <Nav.Link href="#account">Account</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          {/* <Nav.Link href="#contact">Contact</Nav.Link> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
