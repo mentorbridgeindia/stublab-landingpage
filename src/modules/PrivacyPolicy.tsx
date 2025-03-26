@@ -15,7 +15,7 @@ const PrivacyPolicy: React.FC = () => {
 
         <Container fluid className="d-flex justify-content-center align-items-center flex-grow-1 p-4">
           <div className="bg-white text-dark p-4 rounded shadow-lg text-start" style={{ maxWidth: '800px' }}>
-            <p className="lead">
+            <p>
               At StubLab, we value your privacy and are committed to protecting your personal data. 
               This Privacy Policy outlines how we collect, use, and safeguard the information you provide to us.
             </p>

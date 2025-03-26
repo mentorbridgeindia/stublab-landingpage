@@ -15,7 +15,7 @@ const TermsOfService: React.FC = () => {
 
         <Container fluid className="d-flex justify-content-center align-items-center flex-grow-1 p-4">
           <div className="bg-white text-dark p-4 rounded shadow-lg text-start" style={{ maxWidth: '800px' }}>
-            <p className="lead">
+            <p>
               Welcome to StubLab, an innovative stub server application designed to empower development
               teams to configure, test, and iterate on APIs quickly and efficiently.
             </p>

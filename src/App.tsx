@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { TeamDetail } from "./pages/TeamDetail";
 import TermsOfService from "./modules/TermsOfService";
 import PrivacyPolicy from "./modules/PrivacyPolicy";
+import Security from "./modules/Security";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/team/:id" element={<TeamDetail />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/security" element={<Security/>} />
         </Routes>
       </div>
     </BrowserRouter>
