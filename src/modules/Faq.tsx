@@ -30,7 +30,7 @@ const Faq = () => {
   return (
     
       
-       <Container fluid className="position-relative text-light p-5" style={{ minHeight: '20vh', overflow: 'hidden' }}>
+       <Container fluid className="position-relative text-light p-5" style={{ minHeight: '20vh', overflow: 'hidden' }} id='faq'>
         <Row className="justify-content-center align-items-start g-4">
           <Col lg={5} md={12} className="text-center text-lg-start">
             <div className="faq-header">
