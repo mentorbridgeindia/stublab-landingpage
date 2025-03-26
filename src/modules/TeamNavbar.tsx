@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import logo from "../assets/stublab-logo.svg";
+import { ReactComponent as IconLogo } from "../assets/icon-logo.svg";
 import "./Navbar.scss";
 
-const CustomNavbar = () => {
+const TeamNavbar: React.FC<{ isDetailPage?: boolean }> = ({
+  isDetailPage = false,
+}) => {
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -42,25 +44,21 @@ const CustomNavbar = () => {
     <Navbar
       expand="md"
       fixed="top"
-      className={`custom-navbar ${!visible ? "navbar-hidden" : ""} ${
-        isAnimating ? "animate__animated animate__fadeInDown" : ""
-      }`}
-      id='contact' >
+      className={`custom-navbar detail-page-navbar ${
+        !visible ? "navbar-hidden" : ""
+      } ${isAnimating ? "animate__animated animate__fadeInDown" : ""}`}
+    >
       <Navbar.Brand href="#" className="logo">
-        <img src={logo} alt="Logo" />
+        <IconLogo />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="https://stublab.securosphere.in/login" rel="noopener noreferrer">Login</Nav.Link>
-          <Nav.Link href="https://stublab.securosphere.in/register" rel="noopener noreferrer">Register</Nav.Link>
-          {/* <Nav.Link href="#account">Account</Nav.Link> */}
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
   );
 };
 
-export default CustomNavbar;
+export default TeamNavbar;

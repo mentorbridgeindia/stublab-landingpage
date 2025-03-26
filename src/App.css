@@ -1,4 +1,4 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "bootstrap/dist/css/bootstrap.min.css";
 .App {
   text-align: center;
 }
@@ -35,5 +35,29 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.top-40 {
+  top: 30%;
+}
+
+.mt-8 {
+  margin-top: 8rem;
+}
+
+.member-details {
+  h5,
+  h6,
+  span,
+  small,
+  ul,
+  li,
+  p {
+    color: white !important;
+  }
+
+  .badge-skill {
+    color: black !important;
   }
 }
