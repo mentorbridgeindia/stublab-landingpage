@@ -13,7 +13,8 @@ input, textarea {
     transition: border-color 0.3s, box-shadow 0.3s;
 
     &::placeholder {
-        color: #e4dfdf !important;
+        color: #c2c2c2 !important;
+        opacity: 50%;
     }
 
     &:focus {
