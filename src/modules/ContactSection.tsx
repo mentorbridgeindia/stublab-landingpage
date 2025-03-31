@@ -80,7 +80,7 @@ const ContactSection: React.FC = () => {
     };
 
     return (
-        <div id='contact' className="container d-flex justify-content-center align-items-center mt-5">
+        <div id='contact-section' className="container d-flex justify-content-center align-items-center mt-5">
             <div className="row w-100" style={{ maxWidth: '1200px' }}>
                 <div className="col-md-6 p-4 bg-transparent rounded-2xl shadow-lg">
                     <h2 className="text-center mb-4">Contact Information</h2>

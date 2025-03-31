@@ -38,6 +38,14 @@ const CustomNavbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible]);
 
+  const handleScrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const contactSection = document.getElementById("contact-section");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <Navbar
       expand="md"
@@ -52,11 +60,10 @@ const CustomNavbar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Nav.Link>
           <Nav.Link href="https://stublab.securosphere.in/login" rel="noopener noreferrer">Login</Nav.Link>
           <Nav.Link href="https://stublab.securosphere.in/register" rel="noopener noreferrer">Register</Nav.Link>
-          {/* <Nav.Link href="#account">Account</Nav.Link> */}
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav.Link onClick={handleScrollToContact}>Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
